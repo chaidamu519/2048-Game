@@ -4,8 +4,7 @@
 
 
 
+http://www.codeskulptor.org/#user46_xivuI3Kbai_1.py
 
 
 
-
-https://py3.codeskulptor.org/#user304_aAdMEqRFNh6WY67_9.py
