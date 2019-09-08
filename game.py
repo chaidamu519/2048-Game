@@ -22,6 +22,7 @@ def merge(line):
     """
     Helper function that merges a single row or column in 2048
     """
+   
     result_list = [0] * len(line)
     find_merge = False
     flag_index = []
@@ -58,6 +59,8 @@ def merge(line):
                 dummy_j += 1
             dummy_i += 1
     
+                         
+    
     return result_list
 
 class TwentyFortyEight:
@@ -88,7 +91,7 @@ class TwentyFortyEight:
         """
         Return a string representation of the grid for debugging.
         """
-        return str(self._cell)
+        return str(self._width)
 
     def get_grid_height(self):
         """
@@ -107,9 +110,9 @@ class TwentyFortyEight:
         Move all tiles in the given direction and add
         a new tile if any tiles moved.
         """
-        if direction is LEFT or RIGHT :
+        if direction == LEFT or direction == RIGHT :
             length = self._width 
-        if direction is UP or DOWN:
+        if direction == UP or direction == DOWN:
             length = self._height 
         update_flag = False
         
@@ -157,3 +160,4 @@ class TwentyFortyEight:
 
 
 poc_2048_gui.run_gui(TwentyFortyEight(5, 6))
+print(str(TwentyFortyEight(5, 6)))
